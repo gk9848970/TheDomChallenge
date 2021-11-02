@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+:root {
+    --size: 3.2rem;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.container {
+    width: min-content;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.main-grid, .color-grid {
+    display: grid;
+    grid-template-columns: repeat(8, var(--size));
+}
+
+.pixelBox, .colorBox {
+    height: var(--size);
+}
+
+.pixelBox {
+    border: 1px solid black;
+}
+
+.colorBox {
+    border: 1px solid black;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+

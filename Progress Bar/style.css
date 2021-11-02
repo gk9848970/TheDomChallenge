@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* :root {
+ 
+} */
+
+body {
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.loading-bar {
+  margin-bottom: 1rem;
+  height: 1.5rem;
+  border: 1px solid black;
+}
+
+.loading-bar > span {
+  display: block;
+  width: 0%;
+  height: 100%;
+  background: blue;
+}
+
+.button-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+button {
+  padding: .4rem 1rem;
+}

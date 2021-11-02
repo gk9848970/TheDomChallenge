@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+:root {
+    --size: 2.8rem;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.chess-board {
+    display: grid;
+    padding: .4rem;
+    border-radius: .4rem;
+    background: rgb(99, 99, 99);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.chess-square {
+    width: var(--size);
+    aspect-ratio: 1;
+}
+
+.white {
+    background: white;
+}
+
+.black {
+    background: black;
+}
+
+.red {
+    background: red;
+}

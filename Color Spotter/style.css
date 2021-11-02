@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+:root {
+    --sizeBox: 28rem;   
+}
+
+body {
+    min-height: 100vh;
+}
+
+.scoreBoard {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 1rem auto;
+    width: var(--sizeBox);
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .2rem;
+
+    margin: 0 auto;
+    width: var(--sizeBox);
+    height: var(--sizeBox);
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+
+    background: steelblue;
+}
